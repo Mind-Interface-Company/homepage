@@ -9,7 +9,7 @@ export default function Waitlist() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
@@ -20,8 +20,26 @@ export default function Waitlist() {
     }
 
     setStatus("submitting");
-    // Placeholder — replace with fetch("/api/waitlist", ...) to wire a real backend
-    setTimeout(() => setStatus("success"), 900);
+
+    try {
+      const res = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim() }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        setStatus("error");
+        setErrorMsg(data?.error ?? "Something went wrong. Please try again.");
+        return;
+      }
+
+      setStatus("success");
+    } catch {
+      setStatus("error");
+      setErrorMsg("Something went wrong. Please check your connection and try again.");
+    }
   };
 
   return (
