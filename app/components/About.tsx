@@ -1,21 +1,21 @@
 const values = [
   {
-    icon: "🤝",
-    title: "Human-First",
+    icon: "🧠",
+    title: "Non-Invasive by Design",
     description:
-      "Built for real people, not lab conditions. Our interfaces adapt to your unique neural patterns — not the other way around.",
+      "No implants, no surgery. Our EEG headset reads brain activity from the scalp — designed for daily, comfortable use outside a lab.",
   },
   {
-    icon: "🔒",
-    title: "Zero Compromise",
+    icon: "🔗",
+    title: "Decoder + Device, Co-Designed",
     description:
-      "Privacy, accuracy, and comfort. All three. No exceptions. Your brain data belongs to you and is encrypted end-to-end.",
+      "We build the decoding algorithm and the headset hardware together, each making the other stronger — rather than fitting software to off-the-shelf equipment.",
   },
   {
-    icon: "🔬",
-    title: "Open Science",
+    icon: "💬",
+    title: "Built for Real Patients",
     description:
-      "We publish our research. The future is too important to keep closed. Science advances when knowledge is shared.",
+      "Designed with and for people who can no longer speak or move — our first goal is restoring communication for locked-in, ALS, and stroke patients, in partnership with leading Singapore hospitals and research institutions.",
   },
 ];
 
@@ -45,15 +45,17 @@ export default function About() {
             className="font-display font-bold text-4xl md:text-6xl text-navy
                        leading-tight mb-6"
           >
-            Closing the Gap Between
+            Turning Thought
             <br />
-            <span className="text-tangerine">Intention and Action.</span>
+            <span className="text-tangerine">Into Communication.</span>
           </h2>
           <p className="text-navy/70 text-lg leading-relaxed max-w-2xl">
-            We started Mind Interface because the next great leap in human capability
-            isn&apos;t about faster chips or bigger models. It&apos;s about closing the gap
-            between what you think and what your technology does. We&apos;re building the
-            bridge.
+            Millions of people with locked-in syndrome, ALS, muscular dystrophy, or
+            stroke retain a fully active mind — but lose the ability to speak or
+            move. Mind Interface Company is building a non-invasive EEG headset
+            paired with a decoding algorithm that reads intended speech and
+            movement directly from brain activity, turning it into text and
+            device control. No implants. No surgery.
           </p>
         </div>
 

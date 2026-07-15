@@ -12,7 +12,7 @@ export default function Footer() {
               Interface
             </span>
           </div>
-          <p className="text-white/40 text-sm">Making the invisible interface visible.</p>
+          <p className="text-white/40 text-sm">Turning thought into communication.</p>
         </div>
 
         <div className="flex items-center gap-6 text-white/40 text-sm">
@@ -21,6 +21,9 @@ export default function Footer() {
           </a>
           <a href="#about" className="hover:text-white/70 transition-colors">
             About
+          </a>
+          <a href="#team" className="hover:text-white/70 transition-colors">
+            Team
           </a>
           <span>© 2026 Mind Interface Company.</span>
         </div>

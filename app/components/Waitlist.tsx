@@ -43,8 +43,8 @@ export default function Waitlist() {
                 You&apos;re on the List.
               </h2>
               <p className="text-white/60 leading-relaxed">
-                We&apos;ll reach out when your spot is ready. Keep an eye on your
-                inbox — something extraordinary is coming.
+                We&apos;ll be in touch as we open early access to patients,
+                clinicians, and researchers.
               </p>
             </div>
           ) : (
@@ -66,9 +66,10 @@ export default function Waitlist() {
               </h2>
 
               <p className="text-white/60 leading-relaxed mb-8">
-                We&apos;re selecting a founding cohort of curious minds to shape the
-                future of Mind Interface. One email. No spam. Just a message when
-                it&apos;s your turn.
+                We&apos;re building alongside the people who need this most. If
+                you&apos;re a patient, caregiver, clinician, or researcher
+                interested in early access to Mind Interface, leave your email
+                — we&apos;ll reach out as we open our first pilots.
               </p>
 
               <form onSubmit={handleSubmit} noValidate className="space-y-4">

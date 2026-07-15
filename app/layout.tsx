@@ -16,13 +16,14 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Mind Interface — Your Mind. The Interface.",
+  title: "Mind Interface Company — A Voice For The Voiceless.",
   description:
-    "Brain-computer interfaces built for the real world. No sci-fi promises — just technology that listens. Join the founding cohort.",
+    "Non-invasive, EEG-based technology that lets people with locked-in syndrome, ALS, and other conditions that block speech and movement turn their thoughts into text — no surgery required.",
   openGraph: {
-    title: "Mind Interface",
-    description: "Brain-computer interfaces built for the real world.",
-    siteName: "Mind Interface",
+    title: "Mind Interface Company",
+    description:
+      "Non-invasive brain-computer interfaces that turn thought into communication.",
+    siteName: "Mind Interface Company",
   },
 };
 

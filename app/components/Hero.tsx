@@ -92,7 +92,7 @@ export default function Hero() {
           className="inline-block bg-canary text-navy text-xs font-bold uppercase
                      tracking-widest px-4 py-1.5 rounded-full mb-8"
         >
-          Early Access — 2026
+          Early Access — Singapore
         </span>
 
         {/* Headline */}
@@ -100,15 +100,17 @@ export default function Hero() {
           className="font-display font-bold text-6xl md:text-8xl leading-none
                      tracking-tight uppercase text-tangerine mb-6"
         >
-          Your Mind.
+          A Voice For
           <br />
-          The Interface.
+          The Voiceless.
         </h1>
 
         {/* Subheadline */}
         <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-          Brain-computer interfaces built for the real world. No sci-fi promises
-          — just technology that listens.
+          Mind Interface Company builds non-invasive, EEG-based technology that
+          lets people with locked-in syndrome, ALS, and other conditions that
+          block speech and movement turn their thoughts into text — no surgery
+          required.
         </p>
 
         {/* CTAs */}
@@ -131,25 +133,20 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Stat strip */}
+        {/* Badge strip */}
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-          {[
-            { value: "10ms", label: "Neural Response Time" },
-            { value: "99.2%", label: "Signal Accuracy" },
-            { value: "< 5g", label: "Device Weight" },
-          ].map(({ value, label }) => (
-            <div
-              key={label}
-              className="bg-teal-deep rounded-2xl px-8 py-5 text-center min-w-[160px]"
-            >
-              <div className="font-display font-bold text-3xl text-canary leading-none mb-1">
-                {value}
+          {["Non-Invasive", "No Surgery Required", "Designed in Singapore"].map(
+            (badge) => (
+              <div
+                key={badge}
+                className="bg-teal-deep rounded-full px-6 py-3 text-center"
+              >
+                <span className="font-display font-bold text-sm text-canary uppercase tracking-widest">
+                  {badge}
+                </span>
               </div>
-              <div className="text-white/50 text-xs uppercase tracking-widest">
-                {label}
-              </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </section>
